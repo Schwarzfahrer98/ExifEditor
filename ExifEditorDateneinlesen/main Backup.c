@@ -1,16 +1,11 @@
-/*
- * libexif example program to display the contents of a number of specific
- * EXIF and MakerNote tags. The tags selected are those that may aid in
- * identification of the photographer who took the image.
- *
- * Placed into the public domain by Dan Fandrich
- */
-
 #include <stdio.h>
 #include <string.h>
 #include <libexif/exif-data.h>
 
- /* Remove spaces on the right of the string */
+//In der Funktion werden die Exif Daten eines Bildes eingelesen und unter der Funkion ShowTag gleichzeitig auch ausgegeben. 
+//Um diesen Code lauffähig zu bekommen muss noch die LibExif bibliothek eingebunden werden. Am besten mit einem Package Manager machen wie vcpkg. Dann libexif dort suchen. Die Datei muss im selben Verzeichnis wie die Bibliothek seiin
+
+/* Remove spaces on the right of the string */
 static void trim_spaces(char* buf)
 {
     char* s = buf - 1;
@@ -22,7 +17,7 @@ static void trim_spaces(char* buf)
 }
 
 /* Show the tag name and contents if the tag exists */
-static void show_tag(ExifData* d, ExifIfd ifd, ExifTag tag)
+static ExifTag show_tag(ExifData* d, ExifIfd ifd, ExifTag tag)
 {
     /* See if this tag exists */
     ExifEntry* entry = exif_content_get_entry(d->ifd[ifd], tag);
@@ -84,43 +79,45 @@ int main(int argc, char** argv)
         return 2;
     }
 
-    /* Show all the tags that might contain information about the
-     * photographer
-     */
-    show_tag(ed, EXIF_IFD_0, EXIF_TAG_ARTIST);
-    show_tag(ed, EXIF_IFD_0, EXIF_TAG_XP_AUTHOR);
-    show_tag(ed, EXIF_IFD_0, EXIF_TAG_COPYRIGHT);
+    /* Ausgeben unsere Relevanten Exif Tags*/
+     
+    show_tag(ed, EXIF_IFD_EXIF, 0x9003);    //Zeigt das Aufnahmedatum an
+    show_tag(ed, EXIF_IFD_0, EXIF_TAG_MAKE);        //Zeigt den Kameraherrsteller an
+    show_tag(ed, EXIF_IFD_0, EXIF_TAG_MODEL);        //Zeigt das Kameramodell an
+    show_tag(ed, EXIF_IFD_GPS, EXIF_TAG_GPS_LATITUDE); //Zeigt GPS Koordinaten den Breitengrad in GRAD MINUTE SEKUNDE an
+    show_tag(ed, EXIF_IFD_GPS, EXIF_TAG_GPS_LATITUDE_REF); //Bezug des Breitengrads (Westen oder Osten)
+    show_tag(ed, EXIF_IFD_GPS, EXIF_TAG_GPS_LONGITUDE); //Zeigt GPS Koordinaten den Längengrad in GRAD MINUTE SEKUNDE an
+    show_tag(ed, EXIF_IFD_GPS, EXIF_TAG_GPS_LONGITUDE_REF); //Bezug des Längengrads (Norden oder Süden
+    
 
-    /* These are much less likely to be useful */
-    show_tag(ed, EXIF_IFD_EXIF, EXIF_TAG_USER_COMMENT);
-    show_tag(ed, EXIF_IFD_0, EXIF_TAG_IMAGE_DESCRIPTION);
-    show_tag(ed, EXIF_IFD_1, EXIF_TAG_IMAGE_DESCRIPTION);
 
-    /* A couple of MakerNote tags can contain useful data.  Read the
-     * manufacturer tag to see if this image could have one of the recognized
-     * MakerNote tags.
-     */
-    entry = exif_content_get_entry(ed->ifd[EXIF_IFD_0], EXIF_TAG_MAKE);
-    if (entry) {
-        char buf[64];
 
-        /* Get the contents of the manufacturer tag as a string */
-        if (exif_entry_get_value(entry, buf, sizeof(buf))) {
-            trim_spaces(buf);
 
-            if (!strcmp(buf, "Canon")) {
-                show_mnote_tag(ed, 9); /* MNOTE_CANON_TAG_OWNER */
+    ///* A couple of MakerNote tags can contain useful data.  Read the
+    // * manufacturer tag to see if this image could have one of the recognized
+    // * MakerNote tags.
+    // */
+    //entry = exif_content_get_entry(ed->ifd[EXIF_IFD_0], EXIF_TAG_MAKE);
+    //if (entry) {
+    //    char buf[64];
 
-            }
-            else if (!strcmp(buf, "Asahi Optical Co.,Ltd.") ||
-                !strcmp(buf, "PENTAX Corporation")) {
-                show_mnote_tag(ed, 0x23); /* MNOTE_PENTAX2_TAG_HOMETOWN_CITY */
-            }
-        }
-    }
+    //    /* Get the contents of the manufacturer tag as a string */
+    //    if (exif_entry_get_value(entry, buf, sizeof(buf))) {
+    //        trim_spaces(buf);
 
-    /* Free the EXIF data */
+    //        if (!strcmp(buf, "Canon")) {
+    //            show_mnote_tag(ed, 9); /* MNOTE_CANON_TAG_OWNER */
+
+    //        }
+    //        else if (!strcmp(buf, "Asahi Optical Co.,Ltd.") ||
+    //            !strcmp(buf, "PENTAX Corporation")) {
+    //            show_mnote_tag(ed, 0x23); /* MNOTE_PENTAX2_TAG_HOMETOWN_CITY */
+    //        }
+    //    }
+    //}
+
+    ///* Free the EXIF data */
     exif_data_unref(ed);
-
+    printf("\nEs ging bis ganz nach unten\n");
     return 0;
 }

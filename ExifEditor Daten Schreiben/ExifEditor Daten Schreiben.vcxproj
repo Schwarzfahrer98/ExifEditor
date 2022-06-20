@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7050667b-c143-4fef-8702-f0ec71b9d1f4}</ProjectGuid>
-    <RootNamespace>ExifEditor</RootNamespace>
+    <ProjectGuid>{0ab72534-7e4d-4982-a0a4-31c0e1126375}</ProjectGuid>
+    <RootNamespace>ExifEditorDatenSchreiben</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>ExifEditorDatenSchreiben</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

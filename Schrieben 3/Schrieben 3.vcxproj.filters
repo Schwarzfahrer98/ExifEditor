@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Schreiben3\exifyay-master\JpegEncoderEXIF\JpegEncoderEXIF.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\canon\exif-mnote-data-canon.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\canon\mnote-canon-entry.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\canon\mnote-canon-tag.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-byte-order.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-content.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-data.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-entry.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-format.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-ifd.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-loader.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-log.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-mem.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-mnote-data.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-tag.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\exif-utils.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\fuji\exif-mnote-data-fuji.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\fuji\mnote-fuji-entry.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\fuji\mnote-fuji-tag.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\olympus\exif-mnote-data-olympus.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\olympus\mnote-olympus-entry.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\olympus\mnote-olympus-tag.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\pentax\exif-mnote-data-pentax.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\pentax\mnote-pentax-entry.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libexif\pentax\mnote-pentax-tag.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libjpeg\jpeg-data.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Schreiben3\exifyay-master\libjpeg\jpeg-marker.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Schreiben3\exifyay-master\JpegEncoderEXIF\JpegEncoderEXIF.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\canon\exif-mnote-data-canon.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\canon\mnote-canon-entry.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\canon\mnote-canon-tag.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-byte-order.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-content.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-data-type.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-data.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-entry.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-format.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-ifd.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-loader.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-log.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-mem.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-mnote-data-priv.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-mnote-data.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-system.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-tag.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif-utils.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\exif.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\fuji\exif-mnote-data-fuji.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\fuji\mnote-fuji-entry.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\fuji\mnote-fuji-tag.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\i18n.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\olympus\exif-mnote-data-olympus.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\olympus\mnote-olympus-entry.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\olympus\mnote-olympus-tag.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\pentax\exif-mnote-data-pentax.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\pentax\mnote-pentax-entry.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\pentax\mnote-pentax-tag.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libexif\_stdint.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libjpeg\jpeg-data.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Schreiben3\exifyay-master\libjpeg\jpeg-marker.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
